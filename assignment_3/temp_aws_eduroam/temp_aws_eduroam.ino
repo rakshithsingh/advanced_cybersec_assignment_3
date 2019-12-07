@@ -4,7 +4,7 @@
 #include "esp_wpa2.h"
 #include <Wire.h>
 #define EAP_IDENTITY "rakshith_sudhirsingh@student.uml.edu" //if connecting from another corporation, use identity@organisation.domain in Eduroam 
-#define EAP_PASSWORD "Ps2lover" //your Eduroam password
+#define EAP_PASSWORD "********" //your Eduroam password
 const char* ssid = "eduroam"; // Eduroam SSID
 const char* host = "arduino.php5.sk"; //external server domain for HTTP connection after authentification
 int counter = 0;
@@ -34,7 +34,7 @@ const char* test_root_ca= \
 
 #define CLIENT_ID "temp_sensor"// thing unique ID, this id should be unique among all things associated with your AWS account.
 #define MQTT_TOPIC "$aws/things/esp32_lm35_temp_sensor/shadow/update" //topic for the MQTT data
-#define AWS_HOST "a372gs4nmnvhgr-ats.iot.us-east-1.amazonaws.com" // your host for uploading data to AWS,
+#define AWS_HOST "**************.amazonaws.com" // your host for uploading data to AWS,
 
 AWS_IOT aws;
 WiFiClientSecure client_secure;
