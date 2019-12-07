@@ -1,12 +1,12 @@
 #include<WiFi.h>
 #include<AWS_IOT.h>
 
-#define WIFI_SSID "Wifi_only_for_babez" // SSID of your WIFI
-#define WIFI_PASSWD "qwerty123" //your wifi password
+#define WIFI_SSID "duckietown" // SSID of your WIFI
+#define WIFI_PASSWD "quackquack" //your wifi password
 
 #define CLIENT_ID "temp_sensor"// thing unique ID, this id should be unique among all things associated with your AWS account.
 #define MQTT_TOPIC "$aws/things/esp32_lm35_temp_sensor/shadow/update" //topic for the MQTT data
-#define AWS_HOST "a372gs4nmnvhgr-ats.iot.us-east-1.amazonaws.com" // your host for uploading data to AWS,
+#define AWS_HOST "****************" // your host for uploading data to AWS,
 
 AWS_IOT aws;
 
